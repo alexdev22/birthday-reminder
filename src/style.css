@@ -8,15 +8,19 @@ body {
   background-color: rgb(140, 194, 255);
 }
 
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   width: 500px;
-  margin: 0 auto;
+  margin: 5rem 0;
   background: rgb(245, 245, 245);
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 50%);
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 2rem;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(77, 77, 77, 0.75);
   -moz-box-shadow: 0px 0px 15px 0px rgba(149, 149, 149, 0.75);
   box-shadow: 0px 0px 15px 0px rgba(155, 154, 154, 0.75);
@@ -48,6 +52,12 @@ body {
   font-size: 20px;
 }
 
+.list .name .age {
+  font-size: 15px;
+  padding-top: 0.25rem;
+  color: rgb(85, 85, 85);
+}
+
 .clear-list {
   margin: 1rem 0 auto;
   display: block;
@@ -59,4 +69,11 @@ body {
   font-size: 25px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    position: relative;
+  }
 }

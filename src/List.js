@@ -9,7 +9,8 @@ const List = ({ people }) => {
           <div className="list" key={id}>
             <img src={image} className="image"></img>
             <div className="name">
-              {name}, {age}
+              {name}
+              <div className="age">{age} Years</div>
             </div>
           </div>
         );
